@@ -21,8 +21,13 @@ function Hero(){
             fun fact: My top 2 Spotify artists are John Mayer and Kanye West
 
             <br></br> <br></br>
-            Feel free to reach out! ADD LINKS
-   
+            Don't hesitate to reach out, I'd love to connect!
+
+            <div className = 'link-container'>
+                <a className = "link" href = "https://www.linkedin.com/in/jagoldstein" ><i class="fab fa-linkedin-in fa-2x"></i></a> 
+                <a className = "link" href = "https://github.com/joshagoldstein" ><i class="fab fa-github fa-2x"></i></a>
+                <a className = "link" href = "mailto:joshuagoldstein95@gmail.com" ><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
             </p1>
             
         </div>

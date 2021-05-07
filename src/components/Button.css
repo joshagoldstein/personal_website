@@ -18,9 +18,9 @@ root {
 }
 .btn--outline{
     background-color: transparent;
-    color: #456990;
+    color: #FFCF70;
     padding: 8px 20px;
-    border: 1px solid #456990;
+    border: 1px solid #FFCF70;
     transition: all 0.3s ease-out;
 }
 
@@ -36,7 +36,7 @@ root {
 
 .btn--medium:hover, 
 .btn--large:hover{
-    background: #fff;
+    background: #FFCF70;
     color: #456990;
     transition: all 0.3s ease-out;
 }

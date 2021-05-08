@@ -1,0 +1,16 @@
+.exp_main{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.exp_head{
+    font-size: x-large;
+}
+
+.exp_det{
+    padding-left: 10px;
+    flex-grow: 4;
+}

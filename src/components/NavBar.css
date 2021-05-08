@@ -81,7 +81,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color: #FFCF70;
   }
   
   .nav-links-mobile {
@@ -144,7 +144,7 @@
       text-align: center;
       height: 60px;
       border-radius: 0 100% 0 100%;
-      background-color: #a4bef3;
+      background-color: #a1cdf1;
       transition: all 0.3s ease-in-out;
     }
   
@@ -159,7 +159,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #FFCF70;
       font-size: 2rem;
     }
   

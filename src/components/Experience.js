@@ -2,8 +2,10 @@ import React from 'react'
 import './Experience.css';
 
 function Experience(){
+
+
     return(
-        <div className = 'exp_containtr'>
+        <div className = 'slider'>
             <div className = 'exp_main'>
                 <h2 className = 'exp_head'>
                     TAMID Group <br></br> Director of Education

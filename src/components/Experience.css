@@ -5,7 +5,9 @@
     flex-wrap: wrap;
     align-items: center;
 }
-
+.slider{
+    display: flex;
+}
 .exp_head{
     font-size: x-large;
 }

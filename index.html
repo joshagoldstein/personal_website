@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <script src="https://kit.fontawesome.com/d2f3256fe5.js" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JG Website</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+      <nav class="navbar">
+          <div class="navbar_container"></div>
+            <a href="/" id="navbar_logo">JOSH GOLDSTEIN<a/>
+            <div class="navbar_toggle" id="mobile_menu">
+                <i onclick=moveit(this) class="fas fa-bars"></i>
+                <script>
+                   function moveit(x) {
+                        x.classList.toggle("fa-times");
+                        document.querySelector('.navbar_menu').classList.toggle('active');
+                    } 
+                </script>
+            </div>
+    
+            <ul class="navbar_menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">about me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">resume</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">reach out</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <div class='hero-container'>
+            <img class='JGPic' src = "images/JGPic.JPG" alt = "JG"/>
+        
+        <p1 class='hero-body'>
+            <h1 class='hero-header'>
+                Hi! I'm Josh
+                <br></br> 
+            </h1>
+            I am a Computer Science student at the University of Michigan with interests in healthcare, startups, and tech for the common good. I enjoy understanding complex problems to create impactful solutions, and am seeking to leverage my interpersonal abilities, entrepreneurial mindset, and leadership skills to make a meaningful impact in the tech world. 
+        
+            <br></br>
+
+            In my free time I love to cook, enjoy books about startups and history, relieve stress with weightlifting, am learning to play guitar, and I am a diehard Philly sports fan.
+
+            <br></br>       
+            fun fact: My top 2 Spotify artists are John Mayer and Kanye West
+
+            <br></br>
+            Don't hesitate to reach out, I'd love to connect!
+
+            <div class = 'link-container'>
+                <a class = "link" href = "https://www.linkedin.com/in/jagoldstein" ><i class="fab fa-linkedin-in fa-2x"></i></a> 
+                <a class = "link" href = "https://github.com/joshagoldstein" ><i class="fab fa-github fa-2x"></i></a>
+                <a class = "link" href = "mailto:joshuagoldstein95@gmail.com" ><i class="fas fa-envelope fa-2x"></i></a>
+            </div>
+        </p1>
+        </div>
+      <script>src="app.js"</script>
+    </body>
+</html>

@@ -252,7 +252,7 @@
     width: 100%;
     opacity: 0;
     position: fixed;
-    top: 50%;
+    top: .5vh;
     transition: .3s ease-in-out;
 }
 .line.active{
@@ -266,20 +266,19 @@
 
 .exp-1{
     position: fixed;
-    top: 30%;
+    top: 30vh;
     left: -600px;
     text-align: center;
 }
 .fa-chevron-up{
     color:#FFCF70;
-    padding-top: 8%;
+    padding-top: .5vh;
     size: 5x;
 }
 
 .exp-cont{
     height: 120px;
     width: 300px;
-    top: 20%;
     border: 10px #456990;
     padding: 15px;
     text-align: center;

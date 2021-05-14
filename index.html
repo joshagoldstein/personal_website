@@ -66,7 +66,37 @@
                 <a class = "link" href = "mailto:joshuagoldstein95@gmail.com" ><i class="fas fa-envelope fa-2x"></i></a>
             </div>
         </p1>
+      </div>
+      <div class='exp-container'>
+        <hr class='line'></hr>
+        <div class='exp-1'>
+            <div class='exp-cont' 
+                    data-hover = "Lead club's new members through 10+ professional development workshops covering consulting, finance, and technology, preparing them to join TAMID!">
+                    Dec. 2020 <br><br/> TAMID Group <br><br/> Director of Education
+                    <br><br/>  
+                    <i class="fas fa-chevron-up fa-3x"></i>
+            </div>
+            
         </div>
-      <script>src="app.js"</script>
+        
+      </div>
+      <script>
+        let exp1 = document.querySelector('.exp-1');
+        window.onscroll = () => {
+            let pos = window.scrollY- 100 - window.innerHeight;
+            let line = document.querySelector('.line');
+            //x and y being used to determine when to fade in line for timeline
+            let x = window.scrollY;
+            let y =  window.innerHeight * .9;
+            exp1.style.left = pos*2 + 'px';
+            console.log('test');
+            if(x < y){
+                line.classList.remove("active");
+            }
+            else {
+                line.classList.add("active");;
+            }
+        }
+      </script>
     </body>
 </html>

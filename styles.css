@@ -85,7 +85,7 @@
         height: 100vh;
         z-index: 1;
         max-width: 1300px;
-        padding 0;
+        padding: 0;
     }
     .navbar_menu {
       display: flex;
@@ -239,4 +239,65 @@
     .hero-container{
         height: 90%;
     }
+}
+
+.exp-container{
+    background: #f2f2f2;
+    height: 400vh;
+    width: 100%;
+}
+
+.line{
+    border-top: 20px solid #456990;
+    width: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    transition: .3s ease-in-out;
+}
+.line.active{
+    border-top: 20px solid #456990;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    opacity: 1;
+    transition: .3s ease-in-out;
+}
+
+.exp-1{
+    position: fixed;
+    top: 30%;
+    left: -600px;
+    text-align: center;
+}
+.fa-chevron-up{
+    color:#FFCF70;
+    padding-top: 8%;
+    size: 5x;
+}
+
+.exp-cont{
+    height: 120px;
+    width: 300px;
+    top: 20%;
+    border: 10px #456990;
+    padding: 15px;
+    text-align: center;
+    border-radius: 20px;
+    background: #456990;
+    position: absolute;
+    color:#FFCF70;
+    font-size: 20px;
+    line-height: 80%;
+}
+.exp-cont:hover{
+    font-size: 0;
+}
+.exp-cont:hover:after{
+    content: attr(data-hover);
+    font-size: 16px;
+    width: 100px;
+    line-height: normal;
+    text-align: center;
+    color: #a1cdf1;
 }

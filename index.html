@@ -23,10 +23,10 @@
     
             <ul class="navbar_menu">
                 <li class="nav-item">
-                    <a href="/" class="nav-link">about me</a>
+                    <a href="#hero" class="nav-link">about me</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/" class="nav-link">experiences</a>
+                    <a href="#experience" class="nav-link">experiences</a>
                 </li>
                 <li class="nav-item">
                     <a href="/" class="nav-link">projects</a>
@@ -40,7 +40,7 @@
             </ul>
         </div>
       </nav>
-      <div class='hero-container'>
+      <div class='hero-container' id = 'hero'>
             <img class='JGPic' src = "images/JGPic.JPG" alt = "JG"/>
         
         <p1 class='hero-body'>
@@ -48,7 +48,7 @@
                 Hi! I'm Josh
                 <br></br> 
             </h1>
-            I am a Computer Science student at the University of Michigan with interests in healthcare, startups, and tech for the common good. I enjoy understanding complex problems to create impactful solutions, and am seeking to leverage my interpersonal abilities, entrepreneurial mindset, and leadership skills to make a meaningful impact in the tech world. 
+            I am a Computer Science student at the University of Michigan with interests in healthcare, education, startups, and tech for the common good. I enjoy understanding complex problems to create impactful solutions, and am seeking to leverage my interpersonal abilities, entrepreneurial mindset, and leadership skills to make a meaningful impact in the tech world. 
         
             <br></br>
 
@@ -67,34 +67,117 @@
             </div>
         </p1>
       </div>
-      <div class='exp-container'>
+      <div class='exp-container' id='experience'>
+        <h1 class='exp-title'>Experiences</h1>
         <hr class='line'></hr>
         <div class='exp-1'>
-            <div class='exp-cont' 
-                    data-hover = "Lead club's new members through 10+ professional development workshops covering consulting, finance, and technology, preparing them to join TAMID!">
-                    Dec. 2020 <br><br/> TAMID Group <br><br/> Director of Education
+            <div class='exp-cont'>
+                    <p class ='exp-data-n'> 
+                    <b>March 2021</b> 
+                    <br><br/> Stock Market Simulator <br><br/> C++
                     <br><br/>  
+                    </p>
+                    
                     <i class="fas fa-chevron-up fa-3x"></i>
             </div>
             
+        <div class='exp-2'>
+            <i class="fas fa-chevron-down fa-3x"></i>
+            <div class='exp-cont'>
+                    <p class ='exp-data'  
+                    data-hover = "Went through full product lifecycle developing comprehensive package for student organizations on monday meant for 200,000+ student users">
+                    <b>Jan. 2021</b> <br><br/> monday.com <br><br/> Student Product Manager
+                    <br><br/>  
+                    </p>
+                    
+            </div>
+            
         </div>
+        <div class='exp-3'>
+            <div class='exp-cont'>
+                <p class ='exp-data'  
+                data-hover = "Joined MProduct, spending a semester learning about the product management role while developing a platform to create more collaborative environment between clubs and non-members on campus">
+                <b>Jan. 2021</b> <br><br/> MProduct <br><br/> New Member
+                <br><br/>  
+                </p>
+                <i class="fas fa-chevron-up fa-3x"></i>
+                    
+            </div>
+            
+        </div>
+        <div class='exp-4'>
+            <i class="fas fa-chevron-down fa-3x"></i>
+            <div class='exp-cont'>
+                    <p class ='exp-data'  
+                    data-hover = "Lead club's new members through 10+ professional development workshops covering consulting, finance, and technology, preparing them to join TAMID!">
+                    <b>Dec. 2020</b><br><br/> TAMID Group <br><br/> Director of Education
+                    <br><br/>  
+                    </p>
+                    
+            </div>
+            
+        </div>
+        <div class='exp-5'>
+            <div class='exp-cont'>
+                    <p class ='exp-data'  
+                    data-hover = "Built custom invoice software for company using JavaScript and GSuite to streamline payment process">
+                    <b>June 2020</b> <br><br/> Childhood Solutuions PC <br><br/> Software Developer & IT Advisor 
+                    <br><br/>  
+                    </p>
+                    
+                    <i class="fas fa-chevron-up fa-3x"></i>
+            </div>
+            
+        <div class='exp-6'>
+            <i class="fas fa-chevron-down fa-3x"></i>
+            <div class='exp-cont'>
+                    <p class ='exp-data-n'>
+                    <b>Aug. 2019</b> <br><br/> University of Michigan <br><br/> Beginning of freshman year!
+                    <br><br/>  
+                    </p>
+                    
+            </div>
+            
+        </div>
+
         
       </div>
       <script>
         let exp1 = document.querySelector('.exp-1');
+        let exp2 = document.querySelector('.exp-2');
+        let exp3 = document.querySelector('.exp-3');
+        let exp4 = document.querySelector('.exp-4');
+        let exp5 = document.querySelector('.exp-5');
+        let exp6 = document.querySelector('.exp-6');
         window.onscroll = () => {
-            let pos = window.scrollY- 150 - window.innerHeight;
+            let pos = window.scrollY + 450 - window.innerHeight;
             let line = document.querySelector('.line');
             //x and y being used to determine when to fade in line for timeline
             let x = window.scrollY;
-            let y =  window.innerHeight * .9;
+            let y =  window.innerHeight * .5;
+
             exp1.style.left = pos*2 + 'px';
+            exp2.style.left = pos*2 - 300 + 'px';
+            exp3.style.left = pos*2 - 600 + 'px';
+            exp4.style.left = pos*2 - 900 + 'px';
+            exp5.style.left = pos*2 - 1200 + 'px';
+            exp6.style.left = pos*2 - 1500 + 'px';
+            let z = 3*y;
             console.log('test');
             if(x < y){
                 line.classList.remove("active");
+                exp1.classList.remove("active");
+                exp2.classList.remove("active");
+            }
+            else if(x > z){
+                line.classList.remove("active");
+                exp1.classList.remove("active");
+                exp2.classList.remove("active");
             }
             else {
-                line.classList.add("active");;
+                line.classList.add("active");
+                exp1.classList.add("active");
+                exp2.classList.add("active");
             }
         }
       </script>

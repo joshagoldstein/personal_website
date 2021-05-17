@@ -243,12 +243,12 @@
 
 .exp-container{
     background: #f2f2f2;
-    height: 400vh;
+    height: 150vh;
     width: 100%;
 }
 
 .line{
-    border-top: 20px solid #456990;
+    border-top: 20px solid #a1cdf1;
     width: 100%;
     opacity: 0;
     position: fixed;
@@ -256,47 +256,122 @@
     transition: .3s ease-in-out;
 }
 .line.active{
-    border-top: 20px solid #456990;
+    border-top: 20px solid #a1cdf1;
     width: 100%;
     position: fixed;
     top: 50%;
     opacity: 1;
     transition: .3s ease-in-out;
 }
-
+.exp-title{
+    position: absolute;
+    padding-top: 50px;
+    text-align: center;
+    z-index: 1;
+    right: 50%;
+    color: #a1cdf1;
+}
 .exp-1{
     position: fixed;
     top: 30vh;
     left: -600px;
     text-align: center;
+    opacity: 0;
+}
+.exp-1.active{
+    position: fixed;
+    top: 30vh;
+    left: -600px;
+    text-align: center;
+    opacity: 1;
+}
+.exp-2{
+    position: fixed;
+    top: 60vh;
+    left: -600px;
+    text-align: center;
+    opacity: 0;
+}
+.exp-2.active{
+    position: fixed;
+    top: 60vh;
+    left: -600px;
+    text-align: center;
+    opacity: 1;
+}
+.exp-3{
+    position: fixed;
+    top: 30vh;
+    left: -600px;
+    text-align: center;
+}
+.exp-4{
+    position: fixed;
+    top: 60vh;
+    left: -600px;
+    text-align: center;
+}
+.exp-5{
+    position: fixed;
+    top: 30vh;
+    left: -600px;
+    text-align: center;
+}
+.exp-6 {
+    position: fixed;
+    top: 60vh;
+    left: -600px;
+    text-align: center;
 }
 .fa-chevron-up{
     color:#FFCF70;
-    padding-top: .5vh;
-    size: 5x;
+    padding-top: 120px;
+}
+.fa-chevron-down{
+    color:#FFCF70;
+    position: absolute;
+    top: -80px;
+    left: 140px;
 }
 
 .exp-cont{
     height: 120px;
-    width: 300px;
-    border: 10px #456990;
+    width: 330px;
+    border: 1px solid #a1cdf1;
     padding: 15px;
     text-align: center;
     border-radius: 20px;
     background: #456990;
     position: absolute;
+}
+.exp-data{
+    width: 300px;
+    height: 120px;
+    text-align: center;
+    position: absolute;
     color:#FFCF70;
     font-size: 20px;
     line-height: 80%;
 }
-.exp-cont:hover{
+.exp-data-n{
+    width: 300px;
+    height: 120px;
+    text-align: center;
+    position: absolute;
+    color:#FFCF70;
+    font-size: 20px;
+    line-height: 80%;
+}
+
+.exp-data:hover{
     font-size: 0;
 }
-.exp-cont:hover:after{
+.exp-data:hover:after{
     content: attr(data-hover);
     font-size: 16px;
     width: 100px;
     line-height: normal;
     text-align: center;
     color: #a1cdf1;
+
 }

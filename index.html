@@ -80,7 +80,7 @@
                     
                     <i class="fas fa-chevron-up fa-3x"></i>
             </div>
-            
+        </div>    
         <div class='exp-2'>
             <i class="fas fa-chevron-down fa-3x"></i>
             <div class='exp-cont'>
@@ -127,7 +127,8 @@
                     
                     <i class="fas fa-chevron-up fa-3x"></i>
             </div>
-            
+        </div>
+    
         <div class='exp-6'>
             <i class="fas fa-chevron-down fa-3x"></i>
             <div class='exp-cont'>
@@ -141,6 +142,10 @@
         </div>
 
         
+      </div>
+      <div class='project-container'>
+        
+
       </div>
       <script>
         let exp1 = document.querySelector('.exp-1');
@@ -173,11 +178,18 @@
                 line.classList.remove("active");
                 exp1.classList.remove("active");
                 exp2.classList.remove("active");
+                exp4.classList.add("active");
+                exp5.classList.add("active");
+                exp6.classList.add("active");
+    
             }
             else {
                 line.classList.add("active");
                 exp1.classList.add("active");
                 exp2.classList.add("active");
+                exp4.classList.remove("active");
+                exp5.classList.remove("active");
+                exp6.classList.remove("active");
             }
         }
       </script>

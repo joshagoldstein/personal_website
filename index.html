@@ -154,6 +154,7 @@
         let exp4 = document.querySelector('.exp-4');
         let exp5 = document.querySelector('.exp-5');
         let exp6 = document.querySelector('.exp-6');
+        let title = document.querySelector('.exp-title');
         window.onscroll = () => {
             let pos = window.scrollY + 450 - window.innerHeight;
             let line = document.querySelector('.line');
@@ -173,23 +174,28 @@
                 line.classList.remove("active");
                 exp1.classList.remove("active");
                 exp2.classList.remove("active");
+                title.style.top = '50px';
             }
             else if(x > z){
                 line.classList.remove("active");
                 exp1.classList.remove("active");
                 exp2.classList.remove("active");
+                exp3.classList.add("active");
                 exp4.classList.add("active");
                 exp5.classList.add("active");
                 exp6.classList.add("active");
+                title.style.top = '-10px';
     
             }
             else {
                 line.classList.add("active");
                 exp1.classList.add("active");
                 exp2.classList.add("active");
+                exp3.classList.remove("active");
                 exp4.classList.remove("active");
                 exp5.classList.remove("active");
                 exp6.classList.remove("active");
+                title.style.top = '50px';
             }
         }
       </script>

@@ -29,19 +29,16 @@
                     <a href="#experience" class="nav-link">experiences</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/" class="nav-link">projects</a>
-                </li>
-                <li class="nav-item">
                     <a href="/" class="nav-link">resume</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/" class="nav-link">reach out</a>
+                    <a href="#footer" class="nav-link">reach out</a>
                 </li>
             </ul>
         </div>
       </nav>
       <div class='hero-container' id = 'hero'>
-            <img class='JGPic' src = "images/JGPic.JPG" alt = "JG"/>
+            <img class='JGPic' src = "images/JGPic.png" alt = "JG"/>
         
         <p1 class='hero-body'>
             <h1 class='hero-header'>
@@ -71,29 +68,36 @@
         <h1 class='exp-title'>Experiences</h1>
         <hr class='line'></hr>
         <div class='exp-1'>
+            <i class="fas fa-chevron-down fa-3x"></i>
+            <div class='exp-cont'>
+                    <p class ='exp-data'  
+                    data-hover = "Collaborated with engineering team on full stack development and testing of core web application, which manages healthcare device logistics">
+                    <b>Summer 2021</b> <br><br/> Impilo Health Systems <br><br/> Software Engineering Intern
+                    <br><br/>  
+                    </p>  
+            </div>
+        </div>
+        <div class='exp-2'>
             <div class='exp-cont'>
                     <p class ='exp-data-n'> 
                     <b>March 2021</b> 
                     <br><br/> Stock Market Simulator <br><br/> C++
                     <br><br/>  
                     </p>
-                    
                     <i class="fas fa-chevron-up fa-3x"></i>
             </div>
         </div>    
-        <div class='exp-2'>
+        <div class='exp-3'>
             <i class="fas fa-chevron-down fa-3x"></i>
             <div class='exp-cont'>
                     <p class ='exp-data'  
                     data-hover = "Went through full product lifecycle developing comprehensive package for student organizations on monday meant for 200,000+ student users">
                     <b>Jan. 2021</b> <br><br/> monday.com <br><br/> Student Product Manager
                     <br><br/>  
-                    </p>
-                    
+                    </p>  
             </div>
-            
         </div>
-        <div class='exp-3'>
+        <div class='exp-4'>
             <div class='exp-cont'>
                 <p class ='exp-data'  
                 data-hover = "Joined MProduct, spending a semester learning about the product management role while developing a platform to create more collaborative environment between clubs and non-members on campus">
@@ -101,11 +105,9 @@
                 <br><br/>  
                 </p>
                 <i class="fas fa-chevron-up fa-3x"></i>
-                    
             </div>
-            
         </div>
-        <div class='exp-4'>
+        <div class='exp-5'>
             <i class="fas fa-chevron-down fa-3x"></i>
             <div class='exp-cont'>
                     <p class ='exp-data'  
@@ -113,37 +115,31 @@
                     <b>Dec. 2020</b><br><br/> TAMID Group <br><br/> Director of Education
                     <br><br/>  
                     </p>
-                    
-            </div>
-            
+            </div>            
         </div>
-        <div class='exp-5'>
+        <div class='exp-6'>
             <div class='exp-cont'>
                     <p class ='exp-data'  
                     data-hover = "Built custom invoice software for company using JavaScript and GSuite to streamline payment process">
                     <b>June 2020</b> <br><br/> Childhood Solutuions PC <br><br/> Software Developer & IT Advisor 
                     <br><br/>  
-                    </p>
-                    
+                    </p>                    
                     <i class="fas fa-chevron-up fa-3x"></i>
             </div>
-        </div>
-    
-        <div class='exp-6'>
+        </div>    
+        <div class='exp-7'>
             <i class="fas fa-chevron-down fa-3x"></i>
             <div class='exp-cont'>
                     <p class ='exp-data-n'>
                     <b>Aug. 2019</b> <br><br/> University of Michigan <br><br/> Beginning of freshman year!
                     <br><br/>  
-                    </p>
-                    
+                    </p>   
             </div>
-            
         </div>
 
         
       </div>
-      <div class='project-container'>
+      <div class='footer-container' id='footer'>
         
 
       </div>
@@ -154,6 +150,7 @@
         let exp4 = document.querySelector('.exp-4');
         let exp5 = document.querySelector('.exp-5');
         let exp6 = document.querySelector('.exp-6');
+        let exp7 = document.querySelector('.exp-7');
         let title = document.querySelector('.exp-title');
         window.onscroll = () => {
             let pos = window.scrollY + 450 - window.innerHeight;
@@ -168,6 +165,7 @@
             exp4.style.left = pos*2 - 900 + 'px';
             exp5.style.left = pos*2 - 1200 + 'px';
             exp6.style.left = pos*2 - 1500 + 'px';
+            exp7.style.left = pos*2 - 1800 + 'px';
             let z = 3*y;
             console.log('test');
             if(x < y){
@@ -184,6 +182,7 @@
                 exp4.classList.add("active");
                 exp5.classList.add("active");
                 exp6.classList.add("active");
+                exp7.classList.add("active");
                 title.style.top = '-10px';
     
             }
@@ -195,9 +194,19 @@
                 exp4.classList.remove("active");
                 exp5.classList.remove("active");
                 exp6.classList.remove("active");
+                exp7.classList.remove("active");
                 title.style.top = '50px';
             }
         }
       </script>
     </body>
+    <footer align="center" padding>
+        <p class="footer_head">Let's Connect!</p>
+        <div class = 'link-container'>
+            <a class = "link" href = "https://www.linkedin.com/in/jagoldstein" ><i class="fab fa-linkedin-in fa-2x"></i></a> 
+            <a class = "link" href = "https://github.com/joshagoldstein" ><i class="fab fa-github fa-2x"></i></a>
+            <a class = "link" href = "mailto:joshuagoldstein95@gmail.com" ><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+        <p>© 2021 Joshua Goldstein. All rights reserved.</p>
+    </footer>
 </html>

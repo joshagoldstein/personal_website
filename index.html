@@ -10,7 +10,7 @@
     <body>
       <nav class="navbar">
           <div class="navbar_container"></div>
-            <a href="https://joshagoldstein.github.io/personal_website/" id="navbar_logo">JOSH GOLDSTEIN<a/>
+            <a href="personal_websiteå" id="navbar_logo">JOSH GOLDSTEIN<a/>
             <div class="navbar_toggle" id="mobile_menu">
                 <i onclick=moveit(this) class="fas fa-bars"></i>
                 <script>
@@ -29,7 +29,7 @@
                     <a href="#experience" class="nav-link">experiences</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://joshagoldstein.github.io/personal_website/Joshua_Goldstein_Resume.pdf" class="nav-link">resume</a>
+                    <a href="/Joshua_Goldstein_Resume.pdf" class="nav-link">resume</a>
                 </li>
                 <li class="nav-item">
                     <a href="#footer" class="nav-link">reach out</a>
@@ -166,7 +166,7 @@
             exp5.style.left = pos*2 - 1200 + 'px';
             exp6.style.left = pos*2 - 1500 + 'px';
             exp7.style.left = pos*2 - 1800 + 'px';
-            let z = 3*y;
+            let z = 3*y+80;
             console.log('test');
             if(x < y){
                 line.classList.remove("active");
@@ -200,7 +200,7 @@
         }
       </script>
     </body>
-    <footer align="center" padding>
+    <footer class="footer_cont" align="center" padding>
         <p class="footer_head">Let's Connect!</p>
         <div class = 'link-container'>
             <a class = "link" href = "https://www.linkedin.com/in/jagoldstein" ><i class="fab fa-linkedin-in fa-2x"></i></a> 
